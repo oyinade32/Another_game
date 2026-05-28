@@ -1,0 +1,8 @@
+[package]
+name = "another_game"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+[dev-dependencies]
+criterion = "0.5"
