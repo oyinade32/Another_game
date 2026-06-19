@@ -16,10 +16,6 @@ fn benchmark_game(c: &mut Criterion) {
         b.iter(|| winner_optimized(black_box(&heaps_small)))
     });
 
-    group.bench_function("naive_large", |b| {
-        b.iter(|| winner_naive(black_box(&heaps_large)))
-    });
-
     group.bench_function("optimized_large", |b| {
         b.iter(|| winner_optimized(black_box(&heaps_large)))
     });
